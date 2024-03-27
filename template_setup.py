@@ -4,22 +4,27 @@ from typing import Dict
 
 
 def replace_in_file(file_path: str, replacements: Dict[str, str]) -> None:
-    """Replace placeholders in the content of a file with given values.
+    """Replace placeholders in the content of a file with given values, skipping binary files.
 
     Args:
         file_path: The path to the file where replacements need to be made.
-        replacements: A dictionary mapping placeholder strings to their values.
+        replacements: A dictionary mapping placeholder strings to their replacement values.
     """
-    with open(file_path, 'r', encoding='utf-8') as file:
-        content = file.read()
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            content = file.read()
 
-    original_content = content
-    for old, new in replacements.items():
-        content = content.replace(old, new)
+        original_content = content
+        for old, new in replacements.items():
+            content = content.replace(old, new)
 
-    if content != original_content:
-        with open(file_path, 'w', encoding='utf-8') as file:
-            file.write(content)
+        if content != original_content:
+            with open(file_path, 'w', encoding='utf-8') as file:
+                file.write(content)
+
+    except UnicodeDecodeError:
+        print(f"Skipping binary file: {file_path}")
+
 
 def replace_in_filename(file_path: str, replacements: Dict[str, str]) -> str:
     """Replace placeholders in the name of a file and return the new file path.
