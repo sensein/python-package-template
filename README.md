@@ -1,17 +1,5 @@
 # The Sensein's python package template repo
 
-[![Build](YOUR_PACKAGE_REPO/actions/workflows/test.yaml/badge.svg?branch=main)](YOUR_PACKAGE_REPO/actions/workflows/test.yaml?query=branch%3Amain)
-[![codecov](https://codecov.io/gh/YOUR_GITHUB_NICKNAME/YOUR_PACKAGE_NAME/branch/main/graph/badge.svg?token=CODECOV_GRAPHICS_TOKEN)](https://codecov.io/gh/YOUR_GITHUB_NICKNAME/YOUR_PACKAGE_NAME)
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-
-[![PyPI](https://img.shields.io/pypi/v/YOUR_PACKAGE_NAME.svg)](https://pypi.org/project/YOUR_PACKAGE_NAME/)
-[![Python Version](https://img.shields.io/pypi/pyversions/YOUR_PACKAGE_NAME)](https://pypi.org/project/YOUR_PACKAGE_NAME)
-[![License](https://img.shields.io/pypi/l/YOUR_PACKAGE_NAME)](https://opensource.org/licenses/Apache-2.0)
-
-[![pages](https://img.shields.io/badge/api-docs-blue)](https://YOUR_GITHUB_NICKNAME.github.io/YOUR_PACKAGE_NAME)
-
-
-
 Welcome to the [Sensein](https://sensein.group/) python template repo! 
 This template is here to help you kick off your projects with a clean and efficient setup. 
 It's inspired by the [python template by the Child Mind Institute](https://github.com/childmindresearch/template-python-repository) (thanks you!). Our version diverges in its setup process and in both the variety and quantity of automated features included.
@@ -30,16 +18,17 @@ Just follow these steps, and you'll be on your way:
 - `CODECOV_TOKEN`: Your [Codecov](https://about.codecov.io/) token for reporting code coverage.
 
 To obtain these tokens:
-- For `PYPI_TOKEN`, log in to your PyPI account, go to your account settings, and create an API token.
-- `AUTO_ORG_TOKEN` is a personal access token from GitHub, used for actions requiring organization-level permissions. Generate one in your GitHub settings under Developer settings > Personal access tokens. Alternatively, ask the admin of your organization to provide one.
-- For `CODECOV_TOKEN`, sign up or log in to Codecov, add your repository, and you'll be provided with a token. Alternatively, ask the admin of your organization to do so.
+- For `PYPI_TOKEN`, log in to your PyPI account, go to your account settings, and create an API token. Alternatively, ask the admin of your organization to do so.
+- `AUTO_ORG_TOKEN` is a personal access token from GitHub, used for actions requiring organization-level permissions. Generate one in your GitHub settings under Developer settings > Personal access tokens. Alternatively, if the repo is under your organization GitHub, please, ask the admin of your organization to provide one.
+- For `CODECOV_TOKEN`, sign up or log in to Codecov, add your repository, and you'll be provided with a token.
 
 To add these tokens:
 Go to your repository on GitHub, click on "Settings" > "Secrets" > "Actions", then click on "New repository secret". Name your secret (e.g., `PYPI_TOKEN`) and paste the token value. Repeat this for each token.
 
 5. **Clone the repo:** Once your repository is set up, clone it to your local machine.
 
-6. **Replace placeholders with custom values**: Please, run `python template_setup.py --package-name YOUR_PACKAGE_NAME --package-repo-without-git-extension YOUR_PACKAGE_REPO --github-nickname YOUR_GITHUB_NICKNAME --codecov-token CODECOV_GRAPHICS_TOKEN --email YOUR_EMAIL`. For example, `python-package-template % python template_setup.py --package-name pipepal --package-repo-without-git-extension https://github.com/fabiocat93/pipepal --github-nickname fabiocat93 --codecov-token IQR1RCYMAA --email fabiocat@mit.edu`. This will replace some placeholders in the entire directory (including folder names, file names, file content) with your custom info:
+6. **Replace placeholders with custom values**: Please, run `python template_setup.py --package-name YOUR_PACKAGE_NAME --package-repo-without-git-extension YOUR_PACKAGE_REPO --github-nickname YOUR_GITHUB_NICKNAME --codecov-token CODECOV_GRAPHICS_TOKEN --email YOUR_EMAIL`. 
+For example, `python template_setup.py --package-name pipepal --package-repo-without-git-extension https://github.com/fabiocat93/pipepal --github-nickname fabiocat93 --codecov-token IQR1RCYMAA --email fabiocat@mit.edu`. This will replace some placeholders in the entire directory (including folder names, file names, file content) with your custom info:
 - YOUR_PACKAGE_NAME (e.g., `pipepal`)
 - YOUR_PACKAGE_REPO (e.g., `https://github.com/sensein/pipepal`)
 - YOUR_GITHUB_NICKNAME (e.g., `sensein`)
@@ -74,7 +63,18 @@ It will also enable GitHub custom automation and delete the `template_setup.py` 
 That's it! With these steps, you're well on your way to creating an awesome Python package. Keep up the great work, and **happy coding**!
 
 
-# Boilerplate for ```YOUR_PACKAGE_NAME``` readme.md
+# The ```YOUR_PACKAGE_NAME``` repo
+
+[![Build](YOUR_PACKAGE_REPO/actions/workflows/test.yaml/badge.svg?branch=main)](YOUR_PACKAGE_REPO/actions/workflows/test.yaml?query=branch%3Amain)
+[![codecov](https://codecov.io/gh/YOUR_GITHUB_NICKNAME/YOUR_PACKAGE_NAME/branch/main/graph/badge.svg?token=CODECOV_GRAPHICS_TOKEN)](https://codecov.io/gh/YOUR_GITHUB_NICKNAME/YOUR_PACKAGE_NAME)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+
+[![PyPI](https://img.shields.io/pypi/v/YOUR_PACKAGE_NAME.svg)](https://pypi.org/project/YOUR_PACKAGE_NAME/)
+[![Python Version](https://img.shields.io/pypi/pyversions/YOUR_PACKAGE_NAME)](https://pypi.org/project/YOUR_PACKAGE_NAME)
+[![License](https://img.shields.io/pypi/l/YOUR_PACKAGE_NAME)](https://opensource.org/licenses/Apache-2.0)
+
+[![pages](https://img.shields.io/badge/api-docs-blue)](https://YOUR_GITHUB_NICKNAME.github.io/YOUR_PACKAGE_NAME)
+
 Welcome to the ```YOUR_PACKAGE_NAME``` repo! This is a Python package for doing incredible stuff.
 
 **Caution:**: this package is still under development and may change rapidly over the next few weeks.
