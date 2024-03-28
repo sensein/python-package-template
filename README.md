@@ -42,7 +42,7 @@ It will also enable GitHub custom automation and delete the `template_setup.py` 
 
 9. **Install poetry:** Poetry is a fantastic tool for managing dependencies and packaging. If you haven't installed it yet, check out their [documentation](https://python-poetry.org/docs/) for guidance. It's pretty straightforward.
 
-10. **Verify poetry setup:** Run `poetry --help` to ensure everything is set up correctly.
+10. **Verify poetry setup:** Run `poetry --help` to ensure everything is set up correctly. To verify that the project folder is all in order, you can run `poetry check`.
 
 11. **Install dependencies:** Get all your project's dependencies in place by running `poetry install --with dev`.
 
