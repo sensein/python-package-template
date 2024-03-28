@@ -1,5 +1,6 @@
 import argparse
 import os
+import sys
 from typing import Dict
 
 
@@ -90,6 +91,29 @@ def process_directory(replacements: Dict[str, str]) -> None:
             index = dirnames.index(dirname)
             dirnames[index] = os.path.basename(new_dir_path)
 
+def delete_current_script():
+    """Deletes the currently executing script file."""
+    script_file = sys.argv[0]  # Get the name of the current file
+    try:
+        os.remove(script_file)  # Attempt to delete the file
+    except Exception as e:
+        print(f"Error occurred while trying to delete the script: {e}")
+
+def rename_github_directory():
+    """Renames a directory from 'github' to '.github'."""
+    current_name, new_name = "github", ".github"
+    try:
+        # Check if the current directory exists
+        if os.path.exists(current_name):
+            # Rename the directory
+            os.rename(current_name, new_name)
+            print(f"Directory renamed from '{current_name}' to '{new_name}'")
+        else:
+            print(f"The directory '{current_name}' does not exist.")
+    except Exception as e:
+        print(f"Error renaming directory: {e}")
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Replace placeholders.")
     parser.add_argument("--package-name", required=True, help="Package name.")
@@ -111,3 +135,6 @@ if __name__ == "__main__":
     }
 
     process_directory(replacements)
+    rename_github_directory()
+    delete_current_script()
+
