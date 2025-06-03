@@ -27,12 +27,12 @@ Go to your repository on GitHub, click on "Settings" > "Secrets" > "Actions", th
 
 5. **Clone the repo:** Once your repository is set up, clone it to your local machine.
 
-6. **Replace placeholders with custom values**: Please, run `python template_setup.py --package-name YOUR_PACKAGE_NAME --package-repo-without-git-extension YOUR_PACKAGE_REPO --github-nickname YOUR_GITHUB_NICKNAME --codecov-token CODECOV_GRAPHICS_TOKEN --email YOUR_EMAIL`. 
-For example, `python template_setup.py --package-name pipepal --package-repo-without-git-extension https://github.com/fabiocat93/pipepal --github-nickname fabiocat93 --codecov-token IQR1RCYMAA --email fabiocat@mit.edu`. This will replace some placeholders in the entire directory (including folder names, file names, file content) with your custom info:
+6. **Replace placeholders with custom values**: Please, run `python template_setup.py --package-name YOUR_PACKAGE_NAME --package-repo-without-git-extension YOUR_PACKAGE_REPO --github-nickname YOUR_GITHUB_NICKNAME --codecov-token YOUR_CODECOV_TOKEN --email YOUR_EMAIL`. 
+For example, `python template_setup.py --package-name pipepal --package-repo-without-git-extension https://github.com/fabiocat93/pipepal --github-nickname fabiocat93 --codecov-token IQR1RCYMAA --email fabiocat@mit.edu`. This will replace placeholders in the entire directory (including folder names, file names, file content) with your custom info:
 - YOUR_PACKAGE_NAME (e.g., `pipepal`)
 - YOUR_PACKAGE_REPO (e.g., `https://github.com/sensein/pipepal`)
 - YOUR_GITHUB_NICKNAME (e.g., `sensein`)
-- CODECOV_GRAPHICS_TOKEN (e.g.,`ABC0DEFGHI`)
+- YOUR_CODECOV_TOKEN (e.g.,`ABC0DEFGHI`)
 - YOUR_EMAIL (e.g., `sensein@mit.edu`)
 It will also enable GitHub custom automation and delete the `template_setup.py` (you won't need that anymore).
 
@@ -66,7 +66,7 @@ That's it! With these steps, you're well on your way to creating an awesome Pyth
 # The ```YOUR_PACKAGE_NAME``` repo
 
 [![Build](YOUR_PACKAGE_REPO/actions/workflows/test.yaml/badge.svg?branch=main)](YOUR_PACKAGE_REPO/actions/workflows/test.yaml?query=branch%3Amain)
-[![codecov](https://codecov.io/gh/YOUR_GITHUB_NICKNAME/YOUR_PACKAGE_NAME/branch/main/graph/badge.svg?token=CODECOV_GRAPHICS_TOKEN)](https://codecov.io/gh/YOUR_GITHUB_NICKNAME/YOUR_PACKAGE_NAME)
+[![codecov](https://codecov.io/gh/YOUR_GITHUB_NICKNAME/YOUR_PACKAGE_NAME/branch/main/graph/badge.svg?token=YOUR_CODECOV_TOKEN)](https://codecov.io/gh/YOUR_GITHUB_NICKNAME/YOUR_PACKAGE_NAME)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 [![PyPI](https://img.shields.io/pypi/v/YOUR_PACKAGE_NAME.svg)](https://pypi.org/project/YOUR_PACKAGE_NAME/)
