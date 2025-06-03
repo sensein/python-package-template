@@ -1,4 +1,4 @@
-[tool.poetry]
+[project]
 name = "YOUR_PACKAGE_NAME"
 dynamic = ["version"]
 description = "YOUR_PACKAGE_NAME is a Python package for doing incredible stuff."
