@@ -1,6 +1,6 @@
 [project]
 name = "YOUR_PACKAGE_NAME"
-dynamic = ["version"]
+dynamic = ["version", "dependencies"]
 description = "YOUR_PACKAGE_NAME is a Python package for doing incredible stuff."
 authors = [
     {name = "YOUR_GITHUB_NICKNAME", email = "YOUR_EMAIL"},
