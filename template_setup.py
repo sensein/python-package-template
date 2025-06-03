@@ -130,7 +130,7 @@ if __name__ == "__main__":
         "YOUR_PACKAGE_NAME": args.package_name,
         "YOUR_PACKAGE_REPO": args.package_repo_without_git_extension,
         "YOUR_GITHUB_NICKNAME": args.github_nickname,
-        "CODECOV_GRAPHICS_TOKEN": args.codecov_token,
+        "YOUR_CODECOV_TOKEN": args.codecov_token,
         "YOUR_EMAIL": args.email,
     }
 
