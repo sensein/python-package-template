@@ -22,6 +22,9 @@ classifiers = [
   "Operating System :: OS Independent"
 ]
 
+[project.scripts]
+YOUR_PACKAGE_NAME-cli = "YOUR_PACKAGE_NAME.cli:main"
+
 [tool.poetry]
 packages = [{include = "YOUR_PACKAGE_NAME", from = "src"}]
 requires-poetry = ">=2.0"
@@ -99,9 +102,6 @@ convention = "google"
 
 [tool.ruff.lint.per-file-ignores]
 "src/tests/**/*.py" = []
-
-[tool.poetry.scripts]
-YOUR_PACKAGE_NAME-cli = "YOUR_PACKAGE_NAME.cli:main"
 
 [tool.ruff.format]
 quote-style = "double"
