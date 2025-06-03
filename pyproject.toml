@@ -3,10 +3,10 @@ name = "YOUR_PACKAGE_NAME"
 dynamic = ["version"]
 description = "YOUR_PACKAGE_NAME is a Python package for doing incredible stuff."
 authors = [
-    "YOUR_GITHUB_NICKNAME <YOUR_EMAIL>",
+    {name = "YOUR_GITHUB_NICKNAME", email = "YOUR_EMAIL"},
 ]
 maintainers = [
-    "YOUR_GITHUB_NICKNAME <YOUR_EMAIL>",
+    {name = "YOUR_GITHUB_NICKNAME", email = "YOUR_EMAIL"},
 ]
 license = "Apache-2.0"
 readme = "README.md"
