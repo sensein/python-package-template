@@ -46,7 +46,16 @@ It will also enable GitHub custom automation and delete the `template_setup.py` 
 
 11. **Install dependencies:** Get all your project's dependencies in place by running `poetry install --with dev`.
 
-12. **Secure your package name:** Even if you're not quite ready to publish, consider securing your package name on PyPI. You can do this by publishing a dummy version (0.0.1) of your package with `poetry publish --build`.
+12. **Secure your package name:** Even if you're not quite ready to publish, consider securing your package name on PyPI. You can do this by publishing a dummy version (0.0.1) of your package.
+    - Make sure to tell Poetry how to use your PyPI token by running:
+    ```bash
+    poetry config pypi-token.pypi PYPI_TOKEN
+    ```
+    - Publish your package with:
+    ```bash
+    poetry publish --build
+    ```
+    🔐 Note: If you skip the poetry config step, you'll get a 403 error saying Invalid or non-existent authentication information.
 
 13. **Commit and push:** Now's the time to add (e.g., `git add .`) and commit (e.g., `git commit -m "here goes a wonderful message"`) your changes. Consider adding a tag for your initial version (recommended), like `git tag 0.0.1`, then push it all to GitHub with `git push --tags` and `git push origin main`.
 
