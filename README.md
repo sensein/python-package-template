@@ -28,12 +28,12 @@ Go to your repository on GitHub, click on "Settings" > "Secrets" > "Actions", th
 5. **Clone the repo:** Once your repository is set up, clone it to your local machine.
 
 6. **Replace placeholders with custom values**: Please, run `python template_setup.py --package-name YOUR_PACKAGE_NAME --package-repo-without-git-extension YOUR_PACKAGE_REPO --github-nickname YOUR_GITHUB_NICKNAME --codecov-token YOUR_CODECOV_TOKEN --email YOUR_EMAIL`. 
-For example, `python template_setup.py --package-name pipepal --package-repo-without-git-extension https://github.com/fabiocat93/pipepal --github-nickname fabiocat93 --codecov-token IQR1RCYMAA --email fabiocat@mit.edu`. This will replace placeholders in the entire directory (including folder names, file names, file content) with your custom info:
-- YOUR_PACKAGE_NAME (e.g., `pipepal`)
-- YOUR_PACKAGE_REPO (e.g., `https://github.com/sensein/pipepal`)
-- YOUR_GITHUB_NICKNAME (e.g., `sensein`)
+For example, `python template_setup.py --package-name fab --package-repo-without-git-extension https://github.com/fabiocat93/fab --github-nickname fabiocat93 --codecov-token IQR1RCYMAA --email fabiocat@mit.edu`. This will replace placeholders in the entire directory (including folder names, file names, file content) with your custom info:
+- YOUR_PACKAGE_NAME (e.g., `fab`)
+- YOUR_PACKAGE_REPO (e.g., `https://github.com/fabiocat93/fab`)
+- YOUR_GITHUB_NICKNAME (e.g., `fabiocat93`)
 - YOUR_CODECOV_TOKEN (e.g.,`ABC0DEFGHI`)
-- YOUR_EMAIL (e.g., `sensein@mit.edu`)
+- YOUR_EMAIL (e.g., `fabiocat@mit.edu`)
 It will also enable GitHub custom automation and delete the `template_setup.py` (you won't need that anymore).
 
 7. **Adjust `pyproject.toml`:** Please, double-check `pyproject.toml` and update it with some custom info, if needed (i.e., `description`, `authors`, `maintainers`, `description`, `homepage`, `repository`, `keywords`, and `classifiers`). No need to touch `version`. This will be automatically handled by the package.

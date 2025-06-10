@@ -1,4 +1,4 @@
-"""This module defines CLI commands for the PipePal application."""
+"""This module defines CLI commands for the YOUR_PACKAGE_NAME application."""
 
 import click
 
